@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.wion;
+import java.util.Scanner;
+import java.lang.Math;
+
+/**
+ *
+ * @author gabriel alguma coisa
+ */
+public class Wion {
+
+    public static void main(String[] args) {
+        
+        float A;
+        float r;
+        r = (float) 3.14159;
+        
+  //puxando o numero
+        Scanner sc = new Scanner(System.in);
+        float ni = sc.nextFloat();
+        //fazendo a potencia
+        float L = (float) Math.pow(ni,2);
+       A = (r * L);
+        System.out.printf("A=" + "%.4f",A);
+    }
+}
