@@ -16,13 +16,14 @@ public class Main {
 
     int x, y, z, a, b;
     
-    x = N / 3600;
-    a = N % 3600;
-    y = N / 60;
-    b = N % 60;
+    x = N / 365;
+    a = N % 365;
+    y = a / 30;
+    b = a % 30;
     z = b;
-    System.out.println(String.format(x + ":" + y + ":" + z)); 
-
+    System.out.println(String.format(x + " ano(s)")); 
+    System.out.println(String.format(y + " mes(es)")); 
+    System.out.println(String.format(z + " dia(s)"));
  
     }
  
